@@ -1,0 +1,19 @@
+{
+	"name": "streaming",
+	"version": "1.0.0",
+	"main": "index.js",
+	"private": "true",
+	"scripts": {
+		"build": "yarn workspace @streaming/app run build",
+		"start": "yarn workspace @streaming/api run start",
+		"dev": "yarn workspace @streaming/api run dev"
+	},
+	"workspaces": [
+		"api",
+		"app"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"@babel/runtime": "^7.13.8"
+	}
+}
