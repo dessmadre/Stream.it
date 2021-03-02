@@ -9,7 +9,6 @@ if (!result.error) {
 			const value = parsed[key];
 			if (value) {
 				process.env[key] = value;
-				console.log(`${key}=${value}`);
 			}
 		});
 	}
